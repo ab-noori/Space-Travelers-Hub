@@ -5,6 +5,9 @@ function App() {
     <div className="App">
       <header className="App-header">
       </header>
+      <main>
+        <H1>Space Travelers' Hub</H1>
+      </main>
     </div>
   );
 }
