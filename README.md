@@ -7,9 +7,9 @@
 
 </div>
 
-<!-- Open pull request using the following structure
+<!-- Open a pull request using the following structure
 
-## Pronject Title: Branch title.............
+## Project Title: Branch title.............
 
 ### 🌟Features:
 
@@ -23,9 +23,9 @@
 
 -->
 
-> # Template
+> # Space Travelers' Hub
 
-| Desktop Veiw Representation|
+| Desktop View Representation|
 |---------------------------------------|
 |<div align="center"><img src="./project-image.png" alt="screenshot" width="auto" height="auto"/></div>|
 |<div align="center"><img src="./project-image.png" alt="screenshot" width="auto" height="auto"/></div>|
@@ -57,9 +57,11 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Template] <a name="about-project"></a>
+# 📖 [Space-Travelers-Hub] <a name="about-project"></a>
 
-> **[Temaplate]** is a project template with ready README file for creating react applications.  
+> **[Space Travelers' Hub]** In this project, we will work with actual live data from the SpaceX API.
+ our task is to build a web application for a company that provides commercial and scientific space travel services.
+ The application will allow users to book rockets and join selected space missions.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -85,7 +87,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> - [Live Demo on Gh-pages](https://ab-noori.github.io/math-magicians/)
+> - [Live Demo on Gh-pages](https://ab-noori.github.io/Space-Travelers-Hub/)
 > - [Live Demo on Render](https://math-magicians-ab.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -110,7 +112,7 @@ Clone this repository to your desired folder:
 - Use the following Commands:
 
       cd your-desired-folder
-      git clone git@github.com:ab-noori/template.git
+      git clone git@github.com:ab-noori/Space-Travelers-Hub.git
 
 
 ### Install
@@ -122,7 +124,7 @@ Clone this repository to your desired folder:
 
 
 ### Usage
-- Use following commands to run on your local system:
+- Use the following commands to run the project on your local system:
 
       npm run build
       npm run deploy
@@ -145,7 +147,7 @@ Clone this repository to your desired folder:
 
       "homepage": "https://ab-noori.github.io/repo-name",
 
-- 3- Add the following scripts to project's jason file:
+- 3- Add the following scripts to the project's Jason file:
 
       "predeploy": "npm run build",
       "deploy": "gh-pages -d build "
@@ -178,7 +180,7 @@ Clone this repository to your desired folder:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/ab-noori/.../issues).
+Feel free to check the [issues page](https://github.com/ab-noori/Space-Travelers-Hub/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -192,8 +194,8 @@ Feel free to check the [issues page](https://github.com/ab-noori/.../issues).
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-  I would like to thank Microverse and my coding partners. Also I want to give credit to [`Nerd's lesson`](https://www.youtube.com/@Nerdslesson)
-YouTub Channel, it's [`react tutorial`](https://www.youtube.com/watch?v=cd3P3yXyx30) is really helpfull.
+  I would like to thank Microverse and my coding partners. Also, I want to give credit to [`Nerd's lesson`](https://www.youtube.com/@Nerdslesson)
+YouTub Channel, its [`react tutorial`](https://www.youtube.com/watch?v=cd3P3yXyx30) is really helpful.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -206,7 +208,7 @@ YouTub Channel, it's [`react tutorial`](https://www.youtube.com/watch?v=cd3P3yXy
 
 - **How to design the site?**
 
-  - Draw a mockup before start to code
+  - Draw a mockup before starting to code
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
