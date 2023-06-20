@@ -145,12 +145,12 @@ Clone this repository to your desired folder:
 
 - 2- Add `'homepage'` to project's jason file:
 
-      "homepage": "https://ab-noori.github.io/repo-name",
+      "homepage": "https://ab-noori.github.io/Space-Travelers-Hub",
 
 - 3- Add the following scripts to the project's Jason file:
 
       "predeploy": "npm run build",
-      "deploy": "gh-pages -d build "
+      "deploy": "gh-pages -d build ",
 
 - 4- Finally run the following command:
 
