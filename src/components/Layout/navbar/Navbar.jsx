@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 import menuItems from './navigationsLinks';
-import './style.css';
+import './style.scss';
 import logo from '../../../assets/logo-planet.png';
 
 const Navbar = () => (
