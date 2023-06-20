@@ -3,10 +3,9 @@ import './App.scss';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-      </header>
+      <header className="App-header" />
       <main>
-        <H1>Space Travelers' Hub</H1>
+        <h1>Space Travelers Hub</h1>
       </main>
     </div>
   );
