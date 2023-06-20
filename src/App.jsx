@@ -1,17 +1,18 @@
 import {
   BrowserRouter as Router, Routes, Route,
 } from 'react-router-dom';
+
 import './App.scss';
+import Layout from './components/Layout/Layout';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header" />
       <main>
-        <h1>Space Travelers Hub</h1>
         <Router>
           <Routes>
-            <Route />
+            <Route path="/" element={<Layout />} />
           </Routes>
         </Router>
       </main>
