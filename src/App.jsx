@@ -12,7 +12,7 @@ function App() {
       <main>
         <Router>
           <Routes>
-            <Route path="/" element={<Layout />} />
+            <Route path="/Space-Travelers-Hub/" element={<Layout />} />
           </Routes>
         </Router>
       </main>
