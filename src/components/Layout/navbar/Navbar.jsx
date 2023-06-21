@@ -3,13 +3,13 @@ import { NavLink } from 'react-router-dom';
 
 import menuItems from './navigationsLinks';
 import './style.scss';
-import logo from '../../../assets/logo-planet.png';
+import logo from '../../../assets/logo.png';
 
 const Navbar = () => (
   <nav className="navbar">
     <div className="logo">
       <img src={logo} alt="Space Travelers" />
-      <h2>Space Travelers Hub</h2>
+      <h2>Space Traverlers&apos; Hub</h2>
     </div>
     <ul className="menu-items">
       {menuItems.map((item) => (
