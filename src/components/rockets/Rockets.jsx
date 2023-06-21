@@ -1,4 +1,3 @@
-import React from 'react';
 import './Rockets.scss';
 
 const Rockets = () => (
