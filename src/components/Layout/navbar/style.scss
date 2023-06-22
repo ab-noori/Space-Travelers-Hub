@@ -36,6 +36,10 @@
   margin-left: 7%;
 }
 
+.menu-items li:last-child .menu-link {
+  white-space: nowrap;
+}
+
 .menu-items a {
   color: #1390ff;
   text-decoration: none;

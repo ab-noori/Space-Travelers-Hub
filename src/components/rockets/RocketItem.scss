@@ -1,0 +1,53 @@
+.rocket-container {
+  width: 100%;
+  display: flex;
+}
+
+.rocket-image {
+  width: 30%;
+  min-height: 20%;
+  margin-bottom: 2%;
+}
+
+.rocket-info {
+  margin-left: 1.5%;
+}
+
+.rocket-title,
+.rocket-description,
+.reserve-button {
+  margin-bottom: 2%;
+}
+
+.rockets-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.reserved {
+  background: #24a2b8;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 10%;
+  margin-right: 1%;
+}
+
+.cancel-reservation {
+  padding: 1.5% 3.5%;
+  border-radius: 5%;
+  border: none;
+}
+
+.rocket-title {
+  font-size: 21px;
+}
+
+.reserve-button {
+  background: #1390ff;
+  color: #fff;
+  border-radius: 5%;
+  padding: 1.5% 3.5%;
+  border: none;
+}
