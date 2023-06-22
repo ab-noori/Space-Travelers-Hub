@@ -8,7 +8,6 @@ import './Rockets.scss';
 const Rockets = () => {
   const dispatch = useDispatch();
   const { rockets } = useSelector((store) => store.rockets);
-  // console.log(rockets);
   useEffect(() => {
     dispatch(fetchRockets());
   }, [dispatch]);
