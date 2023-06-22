@@ -4,6 +4,7 @@
   margin: 0 auto;
   margin-bottom: 4%;
   align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .logo {
@@ -30,10 +31,8 @@
 
 .menu-items li:last-child {
   margin-right: 0;
-}
-
-.menu-items li:first-child {
-  margin-left: 7%;
+  padding-left: 3%;
+  border-left: 1px solid #0d1117;
 }
 
 .menu-items li:last-child .menu-link {
