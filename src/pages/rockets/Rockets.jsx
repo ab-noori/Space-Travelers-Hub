@@ -5,7 +5,6 @@ import './Rockets.scss';
 
 const Rockets = () => {
   const { rockets } = useSelector((store) => store.rockets);
-  console.log(rockets);
 
   if (!rockets) {
     return <div>Rockets Loading...</div>;
