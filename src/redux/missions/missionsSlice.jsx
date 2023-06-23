@@ -20,7 +20,7 @@ const missionSlice = createSlice({
   initialState,
   reducers: {
     joinMission: (state, { payload }) => {
-      state.reservedMissions.push(payload);
+      state.reservedMissions.push(payload); // Add mission ID to reservedMissions array
       state.missions = state.missions.map((mission) => {
         if (mission.mission_id === payload) {
           return { ...mission, reserved: true };
@@ -29,6 +29,7 @@ const missionSlice = createSlice({
       });
     },
     leaveMission: (state, { payload }) => {
+      // remove a mission ID from reservedMissions array
       state.reservedMissions = state.reservedMissions.filter((missionId) => missionId !== payload);
       state.missions = state.missions.map((mission) => {
         if (mission.mission_id === payload) {

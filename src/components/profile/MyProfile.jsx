@@ -11,21 +11,20 @@ const MyProfile = () => {
     dispatch(fetchMissions());
   }, [dispatch]);
 
-  const reservedMissionsList = missions.filter((mission) => {
-    const res = reservedMissions.includes(mission.mission_id);
-    return res;
-  });
+  const reservedList = missions.filter((mission) => reservedMissions.includes(mission.mission_id));
 
   return (
     <div>
-      <h2>My Joint Missions</h2>
-      <ul className="joint-missions-list">
-        {reservedMissionsList.map((mission) => (
-          <li key={mission.mission_id}>
-            {mission.mission_name}
-          </li>
-        ))}
-      </ul>
+      <h2>My Joined Missions</h2>
+      {reservedList.length === 0 ? (
+        <p>You have not joined any mission.</p>
+      ) : (
+        <ul className="joined-missions-list">
+          {reservedList.map((mission) => (
+            <li key={mission.mission_id}>{mission.mission_name}</li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 };
