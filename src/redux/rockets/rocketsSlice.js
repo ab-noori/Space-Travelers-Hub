@@ -7,6 +7,7 @@ const initialState = {
   rockets: [],
   isLoading: false,
   error: null,
+  reservedRockets: [],
 };
 
 // fetch books from the books API
@@ -33,8 +34,8 @@ const rocketsSlice = createSlice({
         return rocket;
       });
       state.rockets = updatedRockets;
+      state.reservedRockets = updatedRockets.filter((rocket) => rocket.reserved);
     },
-
     cancelReserved: (state, { payload }) => {
       const { rockets } = state;
       const updatedRockets = rockets.map((rocket) => {
@@ -44,6 +45,7 @@ const rocketsSlice = createSlice({
         return rocket;
       });
       state.rockets = updatedRockets;
+      state.reservedRockets = state.reservedRockets.filter((rocket) => rocket.id !== payload);
     },
   },
   // handle states of promises

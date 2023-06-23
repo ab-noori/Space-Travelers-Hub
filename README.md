@@ -166,11 +166,16 @@ Clone this repository to your desired folder:
 - Twitter: [@AbdulAliNoori4](https://twitter.com/AbdulAliNoori4)
 - LinkedIn: [abdul-ali-noori](https://www.linkedin.com/in/abdul-ali-noori-384b85195/)
 
+**Dennis Owusu Prahi**
+
+- GitHub: [@githubhandle](https://github.com/til2to)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/dennis-owusu-835888206/)
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Add About page]**
-- [ ] **[Add Contact page]**
+- [ ] **[fetched data from api into redux store]**
+- [ ] **[Used redux toolkit]**
+- [ ] **[Applied conditional rendering of component]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

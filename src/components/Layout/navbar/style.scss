@@ -4,6 +4,8 @@
   margin: 0 auto;
   margin-bottom: 4%;
   align-items: center;
+  padding-bottom: 2%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .logo {
@@ -19,21 +21,13 @@
 
 .menu-items {
   display: flex;
-  padding-left: 1%;
   list-style-type: none;
   align-items: center;
-}
-
-.menu-items li {
-  margin-right: 10px;
+  gap: 10px;
 }
 
 .menu-items li:last-child {
   margin-right: 0;
-}
-
-.menu-items li:first-child {
-  margin-left: 7%;
 }
 
 .menu-items li:last-child .menu-link {
@@ -59,4 +53,8 @@
   border-radius: 50%;
   border: 1px solid #e0e0e0;
   padding: 10px;
+}
+
+.menu-items li:nth-child(4) a {
+  color: gray;
 }
