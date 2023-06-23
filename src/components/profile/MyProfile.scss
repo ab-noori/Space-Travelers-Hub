@@ -1,10 +1,12 @@
+.reserved-rocket-list,
 .joined-missions-list {
   padding: 0;
-  width: 40%;
+  width: 90%;
   border-radius: 5px;
   border: 1px solid #0290ff;
 }
 
+.reserved-rocket-list li,
 .joined-missions-list li {
   padding: 1%;
   margin: 1px;
@@ -26,4 +28,5 @@
 
 .title {
   font-size: 21px;
+  font-weight: 600;
 }

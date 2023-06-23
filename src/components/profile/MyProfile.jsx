@@ -1,30 +1,40 @@
-import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { fetchMissions } from '../../redux/missions/missionsSlice';
+import React from 'react';
+import { useSelector } from 'react-redux';
+
 import './MyProfile.scss';
+import MissionProfile from './missions/MissionProfile';
+import RocketProfile from './rockets/RocketProfile';
 
 const MyProfile = () => {
-  const dispatch = useDispatch();
-  const { missions, reservedMissions } = useSelector((state) => state.missions);
-
-  useEffect(() => {
-    dispatch(fetchMissions());
-  }, [dispatch]);
-
-  const reservedList = missions.filter((mission) => reservedMissions.includes(mission.mission_id));
+  const { rockets } = useSelector((store) => store.rockets);
+  // console.log(rockets)
+  const rocketsStatus = rockets.filter((rocket) => rocket.reserved);
 
   return (
-    <div>
-      <h2>My Joined Missions</h2>
-      {reservedList.length === 0 ? (
-        <p>You have not joined any mission.</p>
-      ) : (
-        <ul className="joined-missions-list">
-          {reservedList.map((mission) => (
-            <li key={mission.mission_id}>{mission.mission_name}</li>
-          ))}
-        </ul>
-      )}
+    <div className="profile-container">
+      {/* show missions on profile page */}
+      <section className="mission-container">
+        <div className="title">
+          My Missions
+        </div>
+        <MissionProfile />
+      </section>
+
+      {/* show rockets on profile page */}
+      <section className="rockets-container">
+        <div className="title">
+          My Rockets
+        </div>
+        {rocketsStatus.length === 0 ? (
+          <p>You have not reserved any rocket.</p>
+        ) : (rocketsStatus.length > 0 && (
+          <ul className="reserved-rocket-list">
+            {rocketsStatus.map((rocket) => (
+              <RocketProfile key={rocket.id} rocket={rocket} />
+            ))}
+          </ul>
+        ))}
+      </section>
     </div>
   );
 };
