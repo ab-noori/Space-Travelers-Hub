@@ -1,45 +1,31 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { fetchMissions } from '../../redux/missions/missionsSlice';
-import './Missions.scss';
+import { fetchMissions, joinMission, leaveMission } from '../../redux/missions/missionsSlice';
+import MissionsView from './MissionsView';
 
 const Missions = () => {
   const dispatch = useDispatch();
-  const { missions } = useSelector((state) => state.missions);
+  const { missions, isLoading, error } = useSelector((state) => state.missions);
 
   useEffect(() => {
     dispatch(fetchMissions());
   }, [dispatch]);
 
+  const handleJoinMission = (missionId) => {
+    dispatch(joinMission(missionId));
+  };
+
+  const handleLeaveMission = (missionId) => {
+    dispatch(leaveMission(missionId));
+  };
   return (
-    <div>
-      <table className="striped-table">
-        <thead>
-          <tr>
-            <th className="nowrap">Mission Name</th>
-            <th className="nowrap">Description</th>
-            <th className="nowrap">Status</th>
-            <th className="nowrap">Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          {missions.map((mission, index) => (
-            <tr key={mission.id} className={index % 2 === 0 ? 'even-row' : 'odd-row'}>
-              <td className="bold">{mission.mission_name}</td>
-              <td>{mission.description}</td>
-              <td className="button-cell">
-                {/* Status value goes here */}
-                <button type="button">Not Member</button>
-              </td>
-              <td className="button-cell">
-                {/* Action buttons go here */}
-                <button type="button">Join Mission</button>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
+    <MissionsView
+      missions={missions}
+      isLoading={isLoading}
+      error={error}
+      handleJoinMission={handleJoinMission}
+      handleLeaveMission={handleLeaveMission}
+    />
   );
 };
 
