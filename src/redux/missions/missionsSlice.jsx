@@ -12,12 +12,32 @@ const initialState = {
   missions: [],
   isLoading: false,
   error: null,
+  reservedMissions: [],
 };
 
 const missionSlice = createSlice({
   name: 'missions',
   initialState,
-  reducers: {},
+  reducers: {
+    joinMission: (state, { payload }) => {
+      state.reservedMissions.push(payload);
+      state.missions = state.missions.map((mission) => {
+        if (mission.mission_id === payload) {
+          return { ...mission, reserved: true };
+        }
+        return mission;
+      });
+    },
+    leaveMission: (state, { payload }) => {
+      state.reservedMissions = state.reservedMissions.filter((missionId) => missionId !== payload);
+      state.missions = state.missions.map((mission) => {
+        if (mission.mission_id === payload) {
+          return { ...mission, reserved: false };
+        }
+        return mission;
+      });
+    },
+  },
   extraReducers: (builder) => {
     builder
       .addCase(fetchMissions.pending, (state) => {
@@ -26,15 +46,12 @@ const missionSlice = createSlice({
       })
       .addCase(fetchMissions.fulfilled, (state, { payload }) => {
         state.isLoading = false;
-        const result = [];
-        payload.map((mission) => {
-          const newMission = {
-            mission_id: mission.mission_id,
-            mission_name: mission.mission_name,
-            description: mission.description,
-          };
-          return result.push(newMission);
-        });
+        const result = payload.map((mission) => ({
+          mission_id: mission.mission_id,
+          mission_name: mission.mission_name,
+          description: mission.description,
+          reserved: state.reservedMissions.includes(mission.mission_id),
+        }));
         state.missions = result;
       })
       .addCase(fetchMissions.rejected, (state, action) => {
@@ -44,4 +61,5 @@ const missionSlice = createSlice({
   },
 });
 
+export const { joinMission, leaveMission } = missionSlice.actions;
 export default missionSlice.reducer;
