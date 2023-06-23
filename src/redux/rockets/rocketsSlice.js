@@ -34,7 +34,6 @@ const rocketsSlice = createSlice({
         return rocket;
       });
       state.rockets = updatedRockets;
-      console.log(updatedRockets);
       state.reservedRockets = updatedRockets.filter((rocket) => rocket.reserved);
     },
     cancelReserved: (state, { payload }) => {
