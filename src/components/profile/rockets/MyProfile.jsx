@@ -5,9 +5,7 @@ import '../MyProfile.scss';
 import RocketProfile from './RocketProfile';
 
 const MyProfile = () => {
-  const { rockets } = useSelector((store) => store.rockets);
-  // console.log(rockets)
-  const rocketsStatus = rockets.filter((rocket) => rocket.reserved);
+  const { reservedRockets } = useSelector((store) => store.rockets);
 
   return (
     <div className="profile-container">
@@ -23,9 +21,9 @@ const MyProfile = () => {
         <div className="title">
           My Rockets
         </div>
-        {rocketsStatus.length > 0 && (
+        {reservedRockets.length > 0 && (
           <ul>
-            {rocketsStatus.map((rocket) => (
+            {reservedRockets.map((rocket) => (
               <RocketProfile key={rocket.id} rocket={rocket} />
             ))}
           </ul>
