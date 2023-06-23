@@ -1,3 +1,16 @@
 * {
   box-sizing: border-box;
 }
+
+.profile-container {
+  display: flex;
+}
+
+.mission-container,
+.rockets-container {
+  width: 50%;
+}
+
+.title {
+  font-size: 21px;
+}
