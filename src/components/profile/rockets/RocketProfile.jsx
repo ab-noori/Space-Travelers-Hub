@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import './rocketProfile.scss';
+// import './rocketProfile.scss';
 
 const RocketProfile = ({ rocket }) => (
   <li className="rockets-reserved">

@@ -23,16 +23,11 @@
   display: flex;
   list-style-type: none;
   align-items: center;
-}
-
-.menu-items li {
-  margin-right: 10px;
+  gap: 10px;
 }
 
 .menu-items li:last-child {
   margin-right: 0;
-  padding-left: 3%;
-  border-left: 1px solid #0d1117;
 }
 
 .menu-items li:last-child .menu-link {
@@ -58,4 +53,8 @@
   border-radius: 50%;
   border: 1px solid #e0e0e0;
   padding: 10px;
+}
+
+.menu-items li:nth-child(4) a {
+  color: gray;
 }
