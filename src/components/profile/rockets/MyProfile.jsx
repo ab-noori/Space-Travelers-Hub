@@ -6,7 +6,7 @@ import RocketProfile from './RocketProfile';
 
 const MyProfile = () => {
   const { rockets } = useSelector((store) => store.rockets);
-  console.log(rockets)
+  // console.log(rockets)
   const rocketsStatus = rockets.filter((rocket) => rocket.reserved);
 
   return (
