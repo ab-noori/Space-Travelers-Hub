@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RocketProfile renders correctly 1`] = `
+<li
+  className="rockets-reserved"
+>
+  Falcon 9
+</li>
+`;
