@@ -1,0 +1,32 @@
+.reserved-rocket-list,
+.joined-missions-list {
+  padding: 0;
+  width: 90%;
+  border-radius: 5px;
+  border: 1px solid #0290ff;
+}
+
+.reserved-rocket-list li,
+.joined-missions-list li {
+  padding: 1%;
+  margin: 1px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-radius: 5px;
+  list-style-type: none;
+  border: 1px solid #0290ff;
+}
+
+.profile-container {
+  display: flex;
+}
+
+.mission-container,
+.rockets-container {
+  width: 50%;
+}
+
+.title {
+  font-size: 21px;
+  font-weight: 600;
+}

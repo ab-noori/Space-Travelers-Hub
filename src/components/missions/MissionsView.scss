@@ -1,0 +1,73 @@
+.striped-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.striped-table th {
+  white-space: nowrap;
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #dee2e6;
+  border-bottom-width: 2px;
+}
+
+.striped-table td {
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #dee2e6;
+  padding-bottom: 2%;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.striped-table tr.even-row {
+  background-color: #f2f2f2;
+}
+
+.striped-table tr.odd-row {
+  background-color: #fff;
+}
+
+.striped-table tbody tr:hover {
+  background-color: #e6e6e6;
+}
+
+.button-cell {
+  text-align: center;
+}
+
+.button-cell button {
+  white-space: nowrap;
+}
+
+.status-btn {
+  height: 1.5rem;
+  border: none;
+  color: white;
+  border-radius: 3px;
+}
+
+.action-btn {
+  height: 2rem;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.active-member {
+  background-color: dodgerblue;
+}
+
+.not-member {
+  background-color: #707070;
+}
+
+.leave-mission {
+  color: red;
+  border-color: red;
+}
+
+.join-mission {
+  border: 1px solid gray;
+}

@@ -27,9 +27,9 @@
 
 | Desktop View Representation|
 |---------------------------------------|
-|<div align="center"><img src="./project-image.png" alt="screenshot" width="auto" height="auto"/></div>|
-|<div align="center"><img src="./project-image.png" alt="screenshot" width="auto" height="auto"/></div>|
-|<div align="center"><img src="./project-image.png" alt="screenshot" width="auto" height="auto"/></div>|
+|<div align="center"><img src="./src/assets/project-image.PNG" alt="screenshot" width="auto" height="auto"/></div>|
+|<div align="center"><img src="./src/assets/project-image1.PNG" alt="screenshot" width="auto" height="auto"/></div>|
+|<div align="center"><img src="./src/assets/project-image2.PNG" alt="screenshot" width="auto" height="auto"/></div>|
 
 <!-- TABLE OF CONTENTS -->
 
@@ -68,10 +68,10 @@
 ### Tech Stack <a name="tech-stack"></a>
 - <summary>Client</summary>
     <ul>
-      <li><a href="https://reactjs.org/">HTML</a></li>
-      <li><a href="https://reactjs.org/">CSS</a></li>
+      <li><a href="https://reactjs.org/">JSX</a></li>
+      <li><a href="https://reactjs.org/">SCSS</a></li>
       <li><a href="https://reactjs.org/">JavaScript</a></li>
-      <li><a href="https://reactjs.org/">ReactJS</a></li>
+      <li><a href="https://reactjs.org/">React-Redux</a></li>
       <li><a href="https://reactjs.org/">API</a></li>
     </ul>
 
@@ -88,7 +88,6 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 > - [Live Demo on Gh-pages](https://ab-noori.github.io/Space-Travelers-Hub/)
-> - [Live Demo on Render](https://math-magicians-ab.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -139,18 +138,18 @@ Clone this repository to your desired folder:
       npx stylelint "**/*.{css,scss}" --fix
  
 ### Deployment
-- 1- install `'gh-pages'` with following command:
+- 1- install _gh-pages_ with following command:
 
       npm i -D gh-pages
 
-- 2- Add `'homepage'` to project's jason file:
+- 2- Add _homepage_ to project's jason file:
 
-      "homepage": "https://ab-noori.github.io/repo-name",
+      "homepage": "https://ab-noori.github.io/Space-Travelers-Hub",
 
-- 3- Add the following scripts to the project's Jason file:
+- 3- Add the following scripts to the _package.jason_ file:
 
       "predeploy": "npm run build",
-      "deploy": "gh-pages -d build "
+      "deploy": "gh-pages -d build ",
 
 - 4- Finally run the following command:
 
@@ -168,11 +167,16 @@ Clone this repository to your desired folder:
 - Twitter: [@AbdulAliNoori4](https://twitter.com/AbdulAliNoori4)
 - LinkedIn: [abdul-ali-noori](https://www.linkedin.com/in/abdul-ali-noori-384b85195/)
 
+**Dennis Owusu Prahi**
+
+- GitHub: [@githubhandle](https://github.com/til2to)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/dennis-owusu-835888206/)
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Add About page]**
-- [ ] **[Add Contact page]**
+- [ ] **[fetched data from api into redux store]**
+- [ ] **[Used redux toolkit]**
+- [ ] **[Applied conditional rendering of component]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
