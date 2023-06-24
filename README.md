@@ -146,7 +146,7 @@ Clone this repository to your desired folder:
 
       "homepage": "https://ab-noori.github.io/Space-Travelers-Hub",
 
-- 3- Add the following scripts to the project's Jason file:
+- 3- Add the following scripts to the _package.jason_ file:
 
       "predeploy": "npm run build",
       "deploy": "gh-pages -d build ",
