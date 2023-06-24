@@ -27,7 +27,7 @@
 
 | Desktop View Representation|
 |---------------------------------------|
-|<div align="center"><img src="./src/assets/project-image.jpg" alt="screenshot" width="auto" height="auto"/></div>|
+|<div align="center"><img src="./src/assets/project-image.PNG" alt="screenshot" width="auto" height="auto"/></div>|
 |<div align="center"><img src="./src/assets/project-image1.PNG" alt="screenshot" width="auto" height="auto"/></div>|
 |<div align="center"><img src="./src/assets/project-image2.PNG" alt="screenshot" width="auto" height="auto"/></div>|
 
@@ -88,7 +88,6 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 > - [Live Demo on Gh-pages](https://ab-noori.github.io/Space-Travelers-Hub/)
-> - [Live Demo on Render](https://math-magicians-ab.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
