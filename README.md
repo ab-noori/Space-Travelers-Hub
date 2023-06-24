@@ -68,10 +68,10 @@
 ### Tech Stack <a name="tech-stack"></a>
 - <summary>Client</summary>
     <ul>
-      <li><a href="https://reactjs.org/">HTML</a></li>
-      <li><a href="https://reactjs.org/">CSS</a></li>
+      <li><a href="https://reactjs.org/">JSX</a></li>
+      <li><a href="https://reactjs.org/">SCSS</a></li>
       <li><a href="https://reactjs.org/">JavaScript</a></li>
-      <li><a href="https://reactjs.org/">ReactJS</a></li>
+      <li><a href="https://reactjs.org/">React-Redux</a></li>
       <li><a href="https://reactjs.org/">API</a></li>
     </ul>
 
