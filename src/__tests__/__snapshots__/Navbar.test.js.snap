@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <nav
+    class="navbar"
+  >
+    <div
+      class="logo"
+    >
+      <img
+        alt="Space Travelers"
+        src="logo.png"
+      />
+      <h2>
+        Space Traverlers' Hub
+      </h2>
+    </div>
+    <ul
+      class="menu-items"
+    >
+      <li>
+        <a
+          activeclassname="active"
+          class="menu-link"
+          href="/Space-Travelers-Hub/"
+        >
+          Rockets
+        </a>
+      </li>
+      <li>
+        <a
+          activeclassname="active"
+          aria-current="page"
+          class="menu-link active"
+          href="/"
+        >
+           
+        </a>
+      </li>
+      <li>
+        <a
+          activeclassname="active"
+          class="menu-link"
+          href="/Space-Travelers-Hub/missions"
+        >
+          Missions
+        </a>
+      </li>
+      <li>
+        <a
+          activeclassname="active"
+          aria-current="page"
+          class="menu-link active"
+          href="/"
+        >
+          |
+        </a>
+      </li>
+      <li>
+        <a
+          activeclassname="active"
+          class="menu-link"
+          href="/Space-Travelers-Hub/profile"
+        >
+          My Profile
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
+`;
