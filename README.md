@@ -167,7 +167,7 @@ Clone this repository to your desired folder:
 - Twitter: [@AbdulAliNoori4](https://twitter.com/AbdulAliNoori4)
 - LinkedIn: [abdul-ali-noori](https://www.linkedin.com/in/abdul-ali-noori-384b85195/)
 
-**Dennis Owusu Prahi**
+👤 **Dennis Owusu Prahi**
 
 - GitHub: [@githubhandle](https://github.com/til2to)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/dennis-owusu-835888206/)
