@@ -138,11 +138,11 @@ Clone this repository to your desired folder:
       npx stylelint "**/*.{css,scss}" --fix
  
 ### Deployment
-- 1- install `'gh-pages'` with following command:
+- 1- install `gh-pages` with following command:
 
       npm i -D gh-pages
 
-- 2- Add `'homepage'` to project's jason file:
+- 2- Add `homepage` to project's jason file:
 
       "homepage": "https://ab-noori.github.io/Space-Travelers-Hub",
 
